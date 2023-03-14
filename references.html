@@ -26,12 +26,14 @@
   <!-- Section with maps -->
   <h2>Maps</h2>
   <div>
-    <button onclick="displayMap('map1')">Show Map 1</button>
-    <button onclick="displayMap('map2')">Show Map 2</button>
-    <button onclick="displayMap('map3')">Show Map 3</button>
+    <button onclick="displayMap('map1')">Heat Map Hamilton by trips</button>
+    <button onclick="displayMap('map2')">Top 5 ATS routes</button>
+    <button onclick="displayMap('map3')">Future LRT vs top 5 routes</button>
+    <button onclick="displayMap('map4')">Top 5 vs Bus 5 route</button>
+    <button onclick="displayMap('map5')">Top 5 vs Bus 1 route</button>
   </div>
 
-  <iframe id="mapFrame" width="600" height="400"></iframe>
+  <iframe id="mapFrame" width="1000" height="600"></iframe>
 
   <script>
     function displayMap(mapName) {
