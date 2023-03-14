@@ -9,8 +9,8 @@
   <h2>Group Members</h2>
   <ul>
     
-    <li><a href="linkedin.com/in/wendy-ardila-chaves">Ardila, Wendy</a></li>
-    <li><a href="https://www.linkedin.com/in/irene-jaramillo-restrepo/">Jaramillo, Irene</a></li>
+    <li><a href="www.linkedin.com/in/wendy-ardila-chaves">Ardila, Wendy</a></li>
+    <li><a href="www.linkedin.com/in/irene-jaramillo-restrepo/">Jaramillo, Irene</a></li>
     <li><a href="www.linkedin.com/in/andresronderosc">Ronderos, Andres</a></li>
     
   </ul>
@@ -25,32 +25,33 @@
 
   <!-- Section with maps -->
   <h2>Maps</h2>
-  <button onclick="showMaps()">Show Maps</button>
-  <div id="map-container"></div>
+  <div>
+    <button onclick="displayMap('map1')">Show Map 1</button>
+    <button onclick="displayMap('map2')">Show Map 2</button>
+    <button onclick="displayMap('map3')">Show Map 3</button>
+  </div>
+
+  <iframe id="mapFrame" width="600" height="400"></iframe>
 
   <script>
-    function showMaps() {
-      var map1 = document.createElement('iframe');
-      map1.src = 'map1.html';
-      map1.width = '400';
-      map1.height = '300';
-      map1.style.margin = '10px';
-      var map2 = document.createElement('iframe');
-      map2.src = 'map2.html';
-      map2.width = '400';
-      map2.height = '300';
-      map2.style.margin = '10px';
-      var map3 = document.createElement('iframe');
-      map3.src = 'map3.html';
-      map3.width = '400';
-      map3.height = '300';
-      map3.style.margin = '10px';
-      var mapContainer = document.getElementById('map-container');
-      mapContainer.appendChild(map1);
-      mapContainer.appendChild(map2);
-      mapContainer.appendChild(map3);
+    function displayMap(mapName) {
+      var mapUrl = "";
+      switch (mapName) {
+        case "map1":
+          mapUrl = "map1.html";
+          break;
+        case "map2":
+          mapUrl = "map2.html";
+          break;
+        case "map3":
+          mapUrl = "map3.html";
+          break;
+      }
+      var mapFrame = document.getElementById("mapFrame");
+      mapFrame.src = mapUrl;
     }
   </script>
 
 </body>
 </html>
+
