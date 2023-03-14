@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05aeaa0aea84b67584b29f4504100942 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05aeaa0aea84b67584b29f4504100942" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05aeaa0aea84b67584b29f4504100942 = L.map(
+                "map_05aeaa0aea84b67584b29f4504100942",
+                {
+                    center: [43.246838156742555, -79.84199538382954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fac1797e316a6e85a1161577c8ffce0d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_8464d52fb977a5b39e72fa120aebb5a2 = L.marker(
+                [43.250097061158215, -79.85969914116883],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_74ae19c6de32cc2d1951c7daa1a1629c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-1", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8464d52fb977a5b39e72fa120aebb5a2.setIcon(icon_74ae19c6de32cc2d1951c7daa1a1629c);
+        
+    
+            marker_8464d52fb977a5b39e72fa120aebb5a2.bindTooltip(
+                `<div>
+                     Community Living Hamilton 191 York Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5a023f2a1e40bcc6ca74dfed75e2e721 = L.circle(
+                [43.250097061158215, -79.85969914116883],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_3a54f2c745aef087d9d6a4bf048663e1 = L.marker(
+                [43.26102542842787, -79.87552735948726],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_d8e7437fc5255d0f981642967dcc80d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-1", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a54f2c745aef087d9d6a4bf048663e1.setIcon(icon_d8e7437fc5255d0f981642967dcc80d1);
+        
+    
+            marker_3a54f2c745aef087d9d6a4bf048663e1.bindTooltip(
+                `<div>
+                     Central Memorial Recreation Centre, 93 West Avenue S
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7d49e640cbf922b409ffce25af72ba22 = L.circle(
+                [43.26102542842787, -79.87552735948726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var poly_line_80e837fb8f3cd9bce34190b8ae5a13d8 = L.polyline(
+                [[43.250097061158215, -79.85969914116883], [43.26102542842787, -79.87552735948726]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            poly_line_80e837fb8f3cd9bce34190b8ae5a13d8.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_478b260ac8ecbe78c8217f45dfccdccc = L.marker(
+                [43.25860020856308, -79.88012474955997],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_1a0414f8a8f14ed9f10557f7c80df11a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-3", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_478b260ac8ecbe78c8217f45dfccdccc.setIcon(icon_1a0414f8a8f14ed9f10557f7c80df11a);
+        
+    
+            marker_478b260ac8ecbe78c8217f45dfccdccc.bindTooltip(
+                `<div>
+                     Residencial Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8e16b730e2677a50b71fd3cae575a380 = L.circle(
+                [43.25860020856308, -79.88012474955997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_771b8575df5ec5a265879640ee782aa6 = L.marker(
+                [43.26488470810693, -79.95048152280528],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_2d45931e27faa61d7325a22bd3cf2f61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-3", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_771b8575df5ec5a265879640ee782aa6.setIcon(icon_2d45931e27faa61d7325a22bd3cf2f61);
+        
+    
+            marker_771b8575df5ec5a265879640ee782aa6.bindTooltip(
+                `<div>
+                     Dundas Learning Centre & Civitan Club 15 Baldwin St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d2f4a6e769d61cc16ef79a8c4df93c73 = L.circle(
+                [43.26488470810693, -79.95048152280528],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var poly_line_8bfe8457983880a1f4a433dd31c87d43 = L.polyline(
+                [[43.25860020856308, -79.88012474955997], [43.26488470810693, -79.95048152280528]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            poly_line_8bfe8457983880a1f4a433dd31c87d43.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9db40923d43305a84ae9f64f43772b3 = L.marker(
+                [43.26495888795003, -79.88327005872655],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_3e5c0ee7f728ea81bbf1058bbee4da11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-2", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f9db40923d43305a84ae9f64f43772b3.setIcon(icon_3e5c0ee7f728ea81bbf1058bbee4da11);
+        
+    
+            marker_f9db40923d43305a84ae9f64f43772b3.bindTooltip(
+                `<div>
+                     Strathcona Gardens, 120 Strathcona Ave N
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_12145019954bcb69eae1925070806668 = L.circle(
+                [43.26495888795003, -79.88327005872655],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_40b49b882a7c65a3c7fb22b23488f3f4 = L.marker(
+                [43.26577880571867, -79.95209495534752],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_b9d43a052a134d7a081469129b069bd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-2", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_40b49b882a7c65a3c7fb22b23488f3f4.setIcon(icon_b9d43a052a134d7a081469129b069bd9);
+        
+    
+            marker_40b49b882a7c65a3c7fb22b23488f3f4.bindTooltip(
+                `<div>
+                     Hear Right Canada, 40 King St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6e29b2c63d351da56bfae5a678c119c8 = L.circle(
+                [43.26577880571867, -79.95209495534752],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var poly_line_d482fb1779707b5de9c935d2ed565205 = L.polyline(
+                [[43.26495888795003, -79.88327005872655], [43.26577880571867, -79.95209495534752]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            poly_line_d482fb1779707b5de9c935d2ed565205.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee9222c3b911f2973cd89a3016c9c2f6 = L.marker(
+                [43.25183475541502, -79.85702866681713],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_9879b6880b1d6f2ca1c2554a974d9a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-4", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ee9222c3b911f2973cd89a3016c9c2f6.setIcon(icon_9879b6880b1d6f2ca1c2554a974d9a55);
+        
+    
+            marker_ee9222c3b911f2973cd89a3016c9c2f6.bindTooltip(
+                `<div>
+                     Shalom Village
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a7736d15583e871d714f3a1e6b189db = L.circle(
+                [43.25183475541502, -79.85702866681713],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_3119736da5de55681e2b1501a8b5bbec = L.marker(
+                [43.24873931857232, -79.87092820921491],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_f1a08ed94d031e99a8a57c264332bfe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-4", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_3119736da5de55681e2b1501a8b5bbec.setIcon(icon_f1a08ed94d031e99a8a57c264332bfe7);
+        
+    
+            marker_3119736da5de55681e2b1501a8b5bbec.bindTooltip(
+                `<div>
+                     Hear Right Canada, 40 King St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_43528470f4dd2f15961070eff163b94e = L.circle(
+                [43.24873931857232, -79.87092820921491],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var poly_line_999cc6eefb807aeccc2ce2b072bd1d7d = L.polyline(
+                [[43.25183475541502, -79.85702866681713], [43.24873931857232, -79.87092820921491]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            poly_line_999cc6eefb807aeccc2ce2b072bd1d7d.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a406259fe5cd6b2b60afc56d892f671d = L.marker(
+                [43.265854284756756, -79.89456810983576],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_c92ef259abff7d3d50e06c06e458411f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-5", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a406259fe5cd6b2b60afc56d892f671d.setIcon(icon_c92ef259abff7d3d50e06c06e458411f);
+        
+    
+            marker_a406259fe5cd6b2b60afc56d892f671d.bindTooltip(
+                `<div>
+                     Revera Baywoods Place Long Term Care Home, 330 Main St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c6f56f3c342fb7a9f5f8fb2b4fb2a49e = L.circle(
+                [43.265854284756756, -79.89456810983576],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var marker_97eee6268ef559a98ac9074864ee7460 = L.marker(
+                [43.26597880571867, -79.95209495534752],
+                {}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var icon_33b976018db655bc80e6f864ed5bcf16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-5", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_97eee6268ef559a98ac9074864ee7460.setIcon(icon_33b976018db655bc80e6f864ed5bcf16);
+        
+    
+            marker_97eee6268ef559a98ac9074864ee7460.bindTooltip(
+                `<div>
+                      St Joseph´s Healthcare Hamilton, 50 Charlton Ave E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e9de08cc553b560a12ef69ed83ec345d = L.circle(
+                [43.26597880571867, -79.95209495534752],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            var poly_line_2810ea556071d501b4e4047c3154ec15 = L.polyline(
+                [[43.265854284756756, -79.89456810983576], [43.26597880571867, -79.95209495534752]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_05aeaa0aea84b67584b29f4504100942);
+        
+    
+            poly_line_2810ea556071d501b4e4047c3154ec15.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
