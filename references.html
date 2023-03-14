@@ -32,6 +32,7 @@
     <button class="btn btn-primary" onclick="displayMap('map3')">Future LRT vs top 5 routes</button>
     <button class="btn btn-primary" onclick="displayMap('map4')">Top 5 vs Bus 5 route</button>
     <button class="btn btn-primary" onclick="displayMap('map5')">Top 5 vs Bus 1 route</button>
+    <button class="btn btn-primary" onclick="displayMap('map6')">LRT vs Bus 5 and top routes</button>
   </div>
 
   <iframe id="mapFrame" width="1200" height="590"></iframe>
@@ -44,7 +45,7 @@
           mapUrl = "https://aronderos.github.io/HEAD_competition/heat_map_routes_hamilton_ATS.html";
           break;
         case "map2":
-          mapUrl = "https://aronderos.github.io/HEAD_competition/TOP_5_routes.html";
+          mapUrl = "https://aronderos.github.io/HEAD_competition/top_5_routes_tooltips.html";
           break;
         case "map3":
           mapUrl = "https://aronderos.github.io/HEAD_competition/LRT_VS_TOP_5_and_top_dest.html";
@@ -54,6 +55,9 @@
           break;
         case "map5":
           mapUrl = "https://aronderos.github.io/HEAD_competition/TOP_5_vs_bus1_routes.html";
+          break;
+        case "map6":
+          mapUrl = "https://aronderos.github.io/HEAD_competition/LRT_VS_TOP_5_and_top_dest_and_route5.html";
           break;
       }
       var mapFrame = document.getElementById("mapFrame");
