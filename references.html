@@ -7,11 +7,47 @@
 </head>
 <body>
   <style>
-   
+        /* Split the screen in half */
+      .split {
+        height: 100%;
+        width: 60%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      /* Control the left side */
+      .left {
+        left: 0;
+
+      }
+
+      /* Control the right side */
+      .right {
+        right: 0;
+
+      }
+
+      /* If you want the content centered horizontally and vertically */
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      /* Style the image inside the centered container, if needed */
+      .centered img {
+        width: 150px;
+        border-radius: 50%;
+      }
   </style>
    <h4>References and Maps HEAD Competition ATS services Hamilton</h4>
   <!-- Section with references -->
-  <h4>Group Members</h4>
+  <br><h4>Group Members</h4>
   <ul>
     
     <li><a href="https://linkedin.com/in/wendy-ardila-chaves/" target="_blank"><i class="fab fa-linkedin"></i>Ardila Chaves, Wendy</a></li>
@@ -33,7 +69,7 @@
   </ul>
 
   <!-- Section with maps -->
-  <h3>View more maps related to ATS service</h3>
+  <br><h4>View more maps related to ATS service</h4>
   <li><a><i></i>LRT = Light Rail Transit, ATS= Accessible Transportation Services</a></li>
   <div>
     <button class="btn btn-primary" onclick="displayMap('map1')">Heat Map by trips</button>
@@ -46,7 +82,7 @@
     
   </div>
 
-  <iframe id="mapFrame" width="1200" height="590"></iframe>
+  <iframe id="mapFrame" width="150" height="730"></iframe>
 
   <script>
     function displayMap(mapName) {
