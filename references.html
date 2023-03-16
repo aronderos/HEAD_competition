@@ -36,11 +36,13 @@
   <h3>View more maps related to ATS service</h3>
   <div>
     <button class="btn btn-primary" onclick="displayMap('map1')">Heat Map Hamilton by trips</button>
+    <button class="btn btn-primary" onclick="displayMap('map7')">Heat Map Stoney Creek</button>
     <button class="btn btn-primary" onclick="displayMap('map2')">Top 5 ATS Trips</button>
    <!-- <button class="btn btn-primary" onclick="displayMap('map3')">LRT vs routes and MF destinations</button>-->
     <button class="btn btn-primary" onclick="displayMap('map4')">Top 5 vs Bus 5</button>
     <button class="btn btn-primary" onclick="displayMap('map5')">Top 5 vs Bus 1</button>
     <button class="btn btn-primary" onclick="displayMap('map6')">LRT vs Bus 5 vs Top origin/dest. and common dest.</button>
+    
   </div>
 
   <iframe id="mapFrame" width="1200" height="590"></iframe>
@@ -66,6 +68,9 @@
           break;
         case "map6":
           mapUrl = "https://aronderos.github.io/HEAD_competition/LRT_VS_TOP_5_and_top_dest_and_route5.html";
+          break;
+        case "map7":
+          mapUrl = "https://aronderos.github.io/HEAD_competition/hamilton_heat_map_stoneycreek.html";
           break;
       }
       var mapFrame = document.getElementById("mapFrame");
